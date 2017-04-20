@@ -17,14 +17,45 @@
   margin-top: 6rem;
 }
 .card {
+  margin: 1rem;
   padding: 0;
-  border: 1px solid #333;
+  box-shadow: 0 3px 6px #333;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card .card-title {
+  height: 6rem;
+  color: #333;
+  font-size: 1rem;
+  padding: .5rem;
 }
 .card img {
+  height: 20rem;
   width: 100%;
 }
 .footer-get-involved {
   height: 20px;
+}
+.card-col {
+  margin-top: 4rem;
+}
+.want-you-row {
+  margin: 4rem;
+}
+.we-want-you {
+  height: 30rem;
+}
+.join-form {
+  color: #333;
+  padding: 5rem;
+  width: 680px;
+  margin: auto;
+  padding-top: 5rem;
+  box-shadow: 0 3px 6px #333;
+}
+.join-form div {
+  margin: 4rem;
 }
 body {
   width: 100%;
