@@ -31,7 +31,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+        .tab-content {
+            background: #fff;
+            color: #555;
+            padding: 19px;
+        }
+        .nav-tabs a {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -89,9 +98,9 @@
                     <div class="col-md-6">
                         <div id="tabs">
                           <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#tabs-1" data-toggle="tab">Amount</a></li>
-                            <li role="presentation"><a href="#tabs-2" data-toggle="tab">Details</a></li>
-                            <li role="presentation"><a href="#tabs-3" data-toggle="tab">Payment</a></li>
+                            <li role="presentation" class="active"><a href="#tabs-1" data-toggle="tab"><span class="badge">1</span>&#32;Amount</a></li>
+                            <li role="presentation"><a href="#tabs-2" data-toggle="tab"><span class="badge">2</span>&#32;Details</a></li>
+                            <li role="presentation"><a href="#tabs-3" data-toggle="tab"><span class="badge">3</span>&#32;Payment</a></li>
                           </ul>
                           <div class="tab-content">
                           <div id="tabs-1" class="tab-pane active">
@@ -101,8 +110,14 @@
                                   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                                   <span class="input-group-addon">.00</span>
                                 </div>
-
-                                <input class="btn btn-warning" type="submit" value="Next">
+                                <div class="checkbox">
+                                  <label><input type="checkbox" value="">Make it Monthly</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <a href="#tabs-2" data-toggle="tab" class="btn btn-warning btn-block">Next</a>
+                                    </div>
+                                </div>
                             </form>
                           </div>
                           <div id="tabs-2" class="tab-pane">
@@ -119,13 +134,30 @@
                                 <label>Email
                                     <input type="email" class="form-control">
                                 </label>
-
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="#tabs-1" data-toggle="tab">Back</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#tabs-3" data-toggle="tab" class="btn btn-warning btn-block">Next</a>
+                                    </div>
+                                </div>
                             </form>
                           </div>
                           <div id="tabs-3" class="tab-pane">
-                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                          </div></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="#tabs-2" data-toggle="tab">Back</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#tabs-4" data-toggle="tab" class="btn btn-warning btn-block">Donate</a>
+                                    </div>
+                                </div>
+                          </div>
+                          <div id="tabs-4" class="tab-pane">
+                            <p>Thank you for donating!</p>
+                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
