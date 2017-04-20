@@ -145,14 +145,34 @@
                             </form>
                           </div>
                           <div id="tabs-3" class="tab-pane">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a href="#tabs-2" data-toggle="tab">Back</a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#tabs-4" data-toggle="tab" class="btn btn-warning btn-block">Donate</a>
-                                    </div>
-                                </div>
+								<div id="paymentTypeTabs-1" class="tab-pane active">
+									<table>
+										<tr>
+											<td>
+												<label for="ccNumber">Card Number</label>
+											</td>
+											<td>
+												<input type="text" id="ccNumber" name="ccNumber" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="ccExpire">Experation Date</label>
+											</td>
+											<td>
+												<input type="text" id="ccExpire" name="ccExpire" />
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<label>Remember Me
+												<input type="checkbox" checked="true" name="ccRemeberMe" />
+											</td>
+										</tr>
+									</table>
+									
+									
+									</label>
                           </div>
                           <div id="tabs-4" class="tab-pane">
                             <p>Thank you for donating!</p>
